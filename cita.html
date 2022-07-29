@@ -34,15 +34,15 @@
                                 <div class="card mb-5" style="background: #eeeeee;border-style: none;">
                                     <div class="card-body p-sm-5">
                                         <div class="row">
-                                            <div class="col" style="padding-top: 48px;"><label id="fecha1",class="col-form-label" style="color: rgb(4,4,4);">Fecha</label></div>
+                                            <div class="col" style="padding-top: 48px;"><label id="fecha1",class="col-form-label" style="color: rgb(4,4,4);">1 de septiembre a las 2 pm </label></div>
                                             <div class="col"><a class="btn btn-primary btn-xl rounded-pill mt-5" role="button" href="info.html" style="background: #003A89;width: 109.5px;height: 68.2px;font-size: 11.4px;padding-right: 0px;padding-left: 0px;">Detalles</a></div>
                                         </div>
                                         <div class="row">
-                                            <div class="col" style="padding-top: 48px;"><label id="fecha2",class="col-form-label" style="color: rgb(4,4,4);">Fecha</label></div>
+                                            <div class="col" style="padding-top: 48px;"><label id="fecha2",class="col-form-label" style="color: rgb(4,4,4);">4 de Agosto a las 8 am</label></div>
                                             <div class="col"><a class="btn btn-primary btn-xl rounded-pill mt-5" role="button" href="info.html" style="background: #003A89;width: 109.5px;height: 68.2px;font-size: 11.4px;padding-right: 0px;padding-left: 0px;">Detalles</a></div>
                                         </div>
                                         <div class="row">
-                                            <div class="col" style="padding-top: 48px;"><label id="fecha3",class="col-form-label" style="color: rgb(4,4,4);">Fecha</label></div>
+                                            <div class="col" style="padding-top: 48px;"><label id="fecha3",class="col-form-label" style="color: rgb(4,4,4);">15 de Agosto a las 12 pm</label></div>
                                             <div class="col"><a class="btn btn-primary btn-xl rounded-pill mt-5" role="button" href="info.html" style="background: #003A89;width: 109.5px;height: 68.2px;font-size: 11.4px;padding-right: 0px;padding-left: 0px;">Detalles</a></div>
                                         </div>
                                     </div>
@@ -75,34 +75,35 @@
             <p class="text-muted mb-0">Fundación Santa Fe de Bogotá</p>
         </div>
     </footer>
+    <script>
+        const dates=["Agosto","Septiembre","Octubre","Noviembre","Septiembre","Octubre","Noviembre","Septiembre","Octubre","Noviembre","Septiembre","Octubre","Noviembre"];
+        const day_cita=["1","4","5","6","30","25","21","14","15","11","24","25"];
+        const hora=["7 am","8 am","8 30 am" ,"2 30 pm","12 30 pm"];
+
+        var item1=day_cita[Math.floor(Math.random()*day_cita.length)];
+        var item2=dates[Math.floor(Math.random()*dates.length)];
+        var item3=hora[Math.floor(Math.random()*hora.length)];
+        var fecha=item1+" de "+item2+" a las "+item3
+
+        var item11=day_cita[Math.floor(Math.random()*day_cita.length)];
+        var item22=dates[Math.floor(Math.random()*dates.length)];
+        var item33=hora[Math.floor(Math.random()*hora.length)];
+        var fecha2=item11+" de "+item22+" a las "+item33
+
+
+        var item111=day_cita[Math.floor(Math.random()*day_cita.length)];
+        var item222=dates[Math.floor(Math.random()*dates.length)];
+        var item333=hora[Math.floor(Math.random()*hora.length)];
+        var fecha3=item111+" de "+item222+" a las "+item333;
+
+        document.getElementById('fecha1').innerHTML=fecha;
+        document.getElementById('fecha2').innerHTML=fecha2;
+        document.getElementById('fecha3').innerHTML=fecha3;
+
+    </script>
     <script src="assets/bootstrap/js/bootstrap.min.js">
     </script>
-    <script>
-        const dates=["Septiembre","Octubre","Noviembre","Septiembre","Octubre","Noviembre","Septiembre","Octubre","Noviembre","Septiembre","Octubre","Noviembre"];
-const day_cita=["1","4","5","6","30","25","21","14","15","11","24","25"];
-const hora=["7 am","8 am","8 30 am" ,"2 30 pm","12 30 pm"];
-
-var item1=day_cita[Math.floor(Math.random()*day_cita.length)];
-var item2=dates[Math.floor(Math.random()*dates.length)];
-var item3=hora[Math.floor(Math.random()*hora.length)];
-var fecha=item1+" de "+item2+" a las "+item3
-
-var item11=day_cita[Math.floor(Math.random()*day_cita.length)];
-var item22=dates[Math.floor(Math.random()*dates.length)];
-var item33=hora[Math.floor(Math.random()*hora.length)];
-var fecha2=item11+" de "+item22+" a las "+item33
-
-
-var item111=day_cita[Math.floor(Math.random()*day_cita.length)];
-var item222=dates[Math.floor(Math.random()*dates.length)];
-var item333=hora[Math.floor(Math.random()*hora.length)];
-var fecha3=item111+" de "+item222+" a las "+item333;
-
-document.getElementById('fecha1').innerHTML=fecha;
-document.getElementById('fecha2').innerHTML=fecha2;
-document.getElementById('fecha3').innerHTML=fecha3;
-
-    </script>
+    
 </body>
 
 </html>
