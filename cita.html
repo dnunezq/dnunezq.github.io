@@ -75,7 +75,34 @@
             <p class="text-muted mb-0">Fundación Santa Fe de Bogotá</p>
         </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js">
+    </script>
+    <script>
+        const dates=["Septiembre","Octubre","Noviembre","Septiembre","Octubre","Noviembre","Septiembre","Octubre","Noviembre","Septiembre","Octubre","Noviembre"];
+const day_cita=["1","4","5","6","30","25","21","14","15","11","24","25"];
+const hora=["7 am","8 am","8 30 am" ,"2 30 pm","12 30 pm"];
+
+var item1=day_cita[Math.floor(Math.random()*day_cita.length)];
+var item2=dates[Math.floor(Math.random()*dates.length)];
+var item3=hora[Math.floor(Math.random()*hora.length)];
+var fecha=item1+" de "+item2+" a las "+item3
+
+var item11=day_cita[Math.floor(Math.random()*day_cita.length)];
+var item22=dates[Math.floor(Math.random()*dates.length)];
+var item33=hora[Math.floor(Math.random()*hora.length)];
+var fecha2=item11+" de "+item22+" a las "+item33
+
+
+var item111=day_cita[Math.floor(Math.random()*day_cita.length)];
+var item222=dates[Math.floor(Math.random()*dates.length)];
+var item333=hora[Math.floor(Math.random()*hora.length)];
+var fecha3=item111+" de "+item222+" a las "+item333;
+
+document.getElementById('fecha1').innerHTML=fecha;
+document.getElementById('fecha2').innerHTML=fecha2;
+document.getElementById('fecha3').innerHTML=fecha3;
+
+    </script>
 </body>
 
 </html>
